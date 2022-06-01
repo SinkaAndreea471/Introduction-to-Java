@@ -3,6 +3,5 @@ public class Main {
         System.out.println("Hello world");
         String name = "John";
         System.out.println(name);
-
     }
 }
