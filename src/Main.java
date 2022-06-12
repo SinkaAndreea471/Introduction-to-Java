@@ -96,7 +96,7 @@ public class Main {
     public static void speed (int meters, int hour, int minutes, int seconds) {
         System.out.println("meters per second:  " + meters / (hour * 3600f + minutes * 60f + seconds));
         System.out.println("km per hour:  " + meters/(1000f * (hour + minutes / 60f + seconds / 3600f)));
-        System.out.println("miles per hour:  " + meters /(1609f * (hour + minutes / 60f + seconds / 3600f)));
+        System.out.println("miles per hours:  " + meters /(1609f * (hour + minutes / 60f + seconds / 3600f)));
     }
 
 }
