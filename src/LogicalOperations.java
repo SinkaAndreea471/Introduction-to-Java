@@ -77,6 +77,49 @@ public class LogicalOperations {
             return third;
         }
     }
+    public void printToHundred (int x){
+        for (int i = x; i <= 100; i++){
+            System.out.println(i);
+        }
+    }
+    public double sumAndAverage (){
+        int sum = 0;
+        for (int i = 1; i <= 100; i++){
+            sum+=i;
+        }
+        System.out.println(sum);
+        return sum/100d;
+    }
+    public void printBackwards (int x, int y){
+        for (int i = x; i >= y; i--){
+            System.out.println(i);
+        }
+    }
+    public float getAverageInRange (int start, int finish) {
+        int sum = 0;
+        float count = 0;
+        while (start <= finish) {
+            sum = sum + start;
+            start++;
+            count++;
+        }
+        return (sum / count);
+    }
+
+    public float getAverageForEvenInInterval(int start, int finish){
+        int sum = 0;
+        float count = 0f;
+        while (start <= finish) {
+            if (start % 2 != 0) {
+                sum = sum + start;
+                count++;
+            }
+            start++;
+        }
+        return (sum/count);
+    }
+
+
 }
 
 
