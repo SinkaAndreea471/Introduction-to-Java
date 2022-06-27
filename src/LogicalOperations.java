@@ -82,6 +82,47 @@ public class LogicalOperations {
             System.out.println(i);
         }
     }
+    public void printToMinusHundred (int x){
+        for (int i = x; i >= -100; i--){
+            System.out.println(i);
+        }
+    }
+    public void printFromNumberToNumber (int x, int y){
+        for (int i = x; i <= y; i++){
+            System.out.println(i);
+        }
+    }
+    public void printFromSmallerToLargerNumber (int x, int y){
+        int minimum = Math.min(x,y);
+        int maximum = Math.max(x,y);
+        for (int i = minimum; i <= maximum; i++){
+            System.out.println(i);
+        }
+    }
+    public void printEvenNumberFrom1to100 (){
+        int n = 100;
+        for (int i = 1; i<=n; i++){
+            if (i%2==0){
+                System.out.println(i);
+            }
+        }
+
+    }
+    public void printOddNumbersFrom1to100 (){
+        int n = 100;
+        for (int i = 1; i <=n; i++){
+            if (i%2!=0){
+                System.out.println(i);
+            }
+        }
+    }
+    public int sumOfNumbers (){
+        int sum = 0;
+        for (int i = 56; i <=100; i++){
+            sum = sum + i;
+        }
+        return sum;
+    }
     public double sumAndAverage (){
         int sum = 0;
         for (int i = 1; i <= 100; i++){
@@ -106,7 +147,7 @@ public class LogicalOperations {
         return (sum / count);
     }
 
-    public float getAverageForEvenInInterval(int start, int finish){
+    public float getAverageForOddInRange(int start, int finish){
         int sum = 0;
         float count = 0f;
         while (start <= finish) {
@@ -118,8 +159,19 @@ public class LogicalOperations {
         }
         return (sum/count);
     }
-
-
+    public void printTrianglePattern (){
+        int size = 7;
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size - i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
 }
+
+
+
+
 
 
