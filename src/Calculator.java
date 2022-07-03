@@ -42,4 +42,15 @@ public class Calculator {
     public int modulo (int x, int y){
         return x%y;
     }
+
+    //Tema while loops
+    public void printto100 (){
+        int i = 94;
+        while (i<=100){
+            System.out.println(i);
+            i++;
+        }
+    }
+
 }
+

@@ -1,17 +1,17 @@
 package AnimalRescue;
 
 public class Doggo {
-    int age = 7;
-    String dogName = "Dante";
-    String dogBreed = "Labrador Retriever";
-    String dogColor = "Black";
-    double dogWeight = 32;
-    int height = 35;
-    int healthLevel = 8;
-    int happyLevel = 9;
-    int hungerLevel = 10;
-    String favouriteFood = "Brit Care with Samon and Potato";
-    String favouriteActivity = "playing in puddles";
+     private int age;
+     private String dogName;
+    private String dogBreed;
+    private String dogColor;
+    private double dogWeight;
+    private int height;
+    private int healthLevel;
+    private int happyLevel;
+    private int hungerLevel;
+    private String favouriteFood;
+    private String favouriteActivity;
 
 
     public void feeding() {
@@ -27,5 +27,93 @@ public class Doggo {
     }
     public void plays (){
         System.out.println("Playing fetch!");
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getDogName() {
+        return dogName;
+    }
+
+    public void setDogName(String dogName) {
+        this.dogName = dogName;
+    }
+
+    public String getDogBreed() {
+        return dogBreed;
+    }
+
+    public void setDogBreed(String dogBreed) {
+        this.dogBreed = dogBreed;
+    }
+
+    public String getDogColor() {
+        return dogColor;
+    }
+
+    public void setDogColor(String dogColor) {
+        this.dogColor = dogColor;
+    }
+
+    public double getDogWeight() {
+        return dogWeight;
+    }
+
+    public void setDogWeight(double dogWeight) {
+        this.dogWeight = dogWeight;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    public int getHealthLevel() {
+        return healthLevel;
+    }
+
+    public void setHealthLevel(int healthLevel) {
+        this.healthLevel = healthLevel;
+    }
+
+    public int getHappyLevel() {
+        return happyLevel;
+    }
+
+    public void setHappyLevel(int happyLevel) {
+        this.happyLevel = happyLevel;
+    }
+
+    public int getHungerLevel() {
+        return hungerLevel;
+    }
+
+    public void setHungerLevel(int hungerLevel) {
+        this.hungerLevel = hungerLevel;
+    }
+
+    public String getFavouriteFood() {
+        return favouriteFood;
+    }
+
+    public void setFavouriteFood(String favouriteFood) {
+        this.favouriteFood = favouriteFood;
+    }
+
+    public String getFavouriteActivity() {
+        return favouriteActivity;
+    }
+
+    public void setFavouriteActivity(String favouriteActivity) {
+        this.favouriteActivity = favouriteActivity;
     }
 }

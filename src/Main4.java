@@ -27,5 +27,20 @@ public class Main4 {
 
         op.printTrianglePattern();
 
+        //tema while loops
+        Calculator calc = new Calculator();
+        calc.printto100();
+        op.printToMinus100();
+        op.printFromFirstToLast(5,12);
+        op.printFromSmallestToLargest(41, 25);
+        op.printEvenNumbersInRange();
+        op.printOddNumbersInRange();
+        op.getAverageInRanges(111,8899);
+        System.out.println(op.getAverageDivisibleTo7(1,21));
+        op.getFirstNumbersInFibonacciSeries(20);
+        op.printPattern(1,110);
+
+
+
     }
 }

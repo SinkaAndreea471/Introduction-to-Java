@@ -77,6 +77,7 @@ public class LogicalOperations {
             return third;
         }
     }
+    //Tema for loops
     public void printToHundred (int x){
         for (int i = x; i <= 100; i++){
             System.out.println(i);
@@ -108,7 +109,7 @@ public class LogicalOperations {
         }
 
     }
-    public void printOddNumbersFrom1to100 (){
+     public void printOddNumbersFrom1to100 (){
         int n = 100;
         for (int i = 1; i <=n; i++){
             if (i%2!=0){
@@ -168,7 +169,122 @@ public class LogicalOperations {
             System.out.println();
         }
     }
+    public void printToMinus100 (){
+        int i = -78;
+        while (i>=-100){
+            System.out.println(i);
+            i--;
+        }
+    }
+    public void printFromFirstToLast (int first, int last) {
+        while (first < last) {
+            first++;
+            System.out.println(first);
+        }
+
+    }
+    public void printFromSmallestToLargest (int first, int last){
+        int minimum = Math.min(first, last);
+        int maximum = Math.max(first, last);
+        while (minimum<=maximum){
+            System.out.println(minimum);
+            minimum++;
+        }
+    }
+
+    public void printEvenNumbersInRange (){
+        int first = 1;
+        int last =100;
+        while (first<=last){
+            if (first%2==0){
+                System.out.println(first);
+            }
+            first++;
+            }
+        }
+    public void printOddNumbersInRange (){
+        int first = 1;
+        int last =100;
+        while (first<=last){
+            if (first%2!=0){
+                System.out.println(first);
+            }
+            first++;
+        }
+    }
+    public void getAverageInRanges (int start, int finish) {
+        int sum = 0;
+        float count = 0;
+        while (start <= finish) {
+            sum = sum + start;
+            start++;
+            count++;
+        }
+        System.out.println(sum / count);
+    }
+    public float getAverageDivisibleTo7 (int start, int finish) {
+        int sum = 0;
+        float count = 0;
+        while (start<=finish){
+            if (start%7==0) {
+                sum = sum + start;
+                count++;
+            }
+            start++;
+        }
+        return (sum/count);
+    }
+    public void getFirstNumbersInFibonacciSeries (int x){
+        int a = 0, b = 1;
+        System.out.println(a);
+        System.out.println(b);
+        int c = 0;
+        int count = 0;
+        while (count<x-2){
+            c = a + b;
+            a = b;
+            b = c;
+            System.out.println(c);
+            count++;
+        }
+    }
+    public void printPattern (int first, int last){
+        int count = 0;
+        while (first<=last){
+            if (count%11==0){
+                System.out.print("\n");
+            }
+            if (first%3==0 && first%5==0 && first%7==0){
+                System.out.print("CozaLozaWoza ");
+            }
+            else if (first%5==0 && first%7==0){
+                System.out.print("WozaLoza ");
+            }
+            else if (first%3==0 && first%7==0){
+                System.out.print("CozaWoza ");
+            }
+            else if (first%3==0 && first%5==0){
+                System.out.print("CozaLoza ");
+            }
+            else if (first%7==0){
+                System.out.print("Woza ");
+            }
+            else if (first%5==0){
+                System.out.print("Loza ");
+            }
+            else if (first%3==0){
+                System.out.print("Coza ");
+            }
+            else {
+                System.out.print(first + " ");
+            }
+            first++;
+            count++;
+        }
+
+    }
 }
+
 
 
 
