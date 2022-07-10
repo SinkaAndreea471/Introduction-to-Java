@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class LogicalOperations {
 
     public int getGreaterNumber(int first, int second) {
@@ -234,7 +236,7 @@ public class LogicalOperations {
         }
         return (sum/count);
     }
-    public void getFirstNumbersInFibonacciSeries (int x){
+    public void getFibonacciSeries (int x){
         int a = 0, b = 1;
         System.out.println(a);
         System.out.println(b);
@@ -282,6 +284,110 @@ public class LogicalOperations {
             count++;
         }
 
+    }
+
+    public int[] populateArrayUpToNumber(int number) {
+        int[] array = new int[number];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = i + 1;
+        }
+        return array;
+    }
+
+    public void printArray(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+        }
+    }
+
+    public double getAverageFromArray(int[] array) {
+        double sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            sum += array[i];
+        }
+        return sum / array.length;
+    }
+    public boolean isValueInArray(String[] array, String value){
+        boolean valueInArray = false;
+        for (int i = 0; i < array.length; i++){
+            if (array[i].equals(value)){
+                valueInArray = true;
+            }
+        }
+        return valueInArray;
+    }
+
+    public int[] populateArrayWithEvenNumber(int number) {
+        int j = 0;
+        int[] array = new int[number % 2 == 0 ? number/2 : (number-1)/2];
+        for (int i = 1; i <= number; i++) {
+            if (i % 2 == 0) {
+                array[j++] = i;
+            }
+        }
+        return array;
+    }
+
+    public int isNumberInArray(int[] array, int value){
+        int valueInArray = -1;
+        for (int i = 0; i < array.length; i++){
+            if (array[i] == value){
+                valueInArray = i;
+            }
+        }
+        return valueInArray;
+    }
+    public void printPatternUsingArray (){
+        int x[]={10, 10, 10, 10, 10, 10, 10, 10, 10, 10};
+        for(int i=0;i<x.length;i++)
+        {
+            int z=x[i];
+            for(int j=0;j<z;j++)
+            {
+                System.out.print("-");
+            }
+            System.out.println(" ");
+        }
+    }
+
+    public int countNumberInArray(int[] array, int value) {
+        int counter = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == value) {
+                counter++;
+            }
+        }
+        return counter;
+    }
+
+    public int[] removeValueFromArray(int[] array, int value){
+        int[] arrayWithRemovedValue = new int[array.length - countNumberInArray(array, value)];
+        for (int i = 0; i < array.length; i++){
+            if (array[i] != value){
+                arrayWithRemovedValue[i] = array[i];
+            }
+        }
+        return arrayWithRemovedValue;
+    }
+
+    public int[] copyValuesFromArray(int[] array, int[] arrayos){
+        for (int i = 0; i < array.length; i++){
+            arrayos[i] = array[i];
+        }
+        return arrayos;
+    }
+    public void bubbleSort(int arr[])
+    {
+        int n = arr.length;
+        for (int i = 0; i < n - 1; i++){
+            for (int j = 0; j < n - i - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
     }
 }
 

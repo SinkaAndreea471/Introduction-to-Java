@@ -37,7 +37,7 @@ public class Main4 {
         op.printOddNumbersInRange();
         op.getAverageInRanges(111,8899);
         System.out.println(op.getAverageDivisibleTo7(1,21));
-        op.getFirstNumbersInFibonacciSeries(20);
+        op.getFibonacciSeries(20);
         op.printPattern(1,110);
 
 
