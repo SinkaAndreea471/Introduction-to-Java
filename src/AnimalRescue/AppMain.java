@@ -55,6 +55,9 @@ public class AppMain {
         DogFood doggoFood = new DogFood();
         doggoFood.setFoodQuantity(45);
         System.out.println("The dog food quantity is " + doggoFood.getFoodQuantity() + " kg.");
+        HumanDoctor humanDoc = new HumanDoctor();
+        humanDoc.setVetName("Dr. Albert Schweinstein");
+        System.out.println("The human doc's name is " + humanDoc.getVetName() + ".");
 
 
     }

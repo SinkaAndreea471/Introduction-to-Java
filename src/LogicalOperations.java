@@ -404,6 +404,7 @@ public class LogicalOperations {
         }
     }
 
+
     public void printNumbersFromListBackwards(List<Integer> myList) {
         for (int i = myList.size() - 1; i >= 0; i--) {
             System.out.println(myList.get(i));
@@ -412,6 +413,39 @@ public class LogicalOperations {
     public void addToEndOfList(List<Integer> integerList, int a){
         integerList.add(a);
         System.out.println(integerList);
+    }
+    public void printList(List<Integer> myList){
+
+        for (int i = 0; i < myList.size(); i++){
+
+            System.out.println(myList.get(i));
+        }
+    }
+    public void printListStartingFromGivenNumber(List<Integer> myList, int index){
+
+        for (int i = index; i < myList.size(); i++){
+            System.out.println(myList.get(i));
+        }
+    }
+    public void printListWithAddedStringToSpecificIndex (List<String> myList, int index, String letter){
+        myList.add(index, letter);
+        System.out.println(myList);
+    }
+    public void addNumberToFirstIndexInList (List<Integer> myList, int number){
+        myList.add(0, number);
+        System.out.println(myList);
+    }
+    public void printListAndShowValueForSpecificIndex(List<Integer> myList){
+        for (int i = 0; i < myList.size(); i++)
+            System.out.println("Index "+i+" has value: "+ myList.get(i));
+    }
+        public int getTheBiggestValueFromList(List<Integer> myList){
+         int maxValue = 0;
+         for (Integer integer : myList) {
+            if (integer > maxValue)
+                maxValue = integer;
+        }
+        return maxValue;
     }
 }
 

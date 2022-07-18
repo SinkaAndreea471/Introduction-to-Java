@@ -22,7 +22,6 @@ public class Main5 {
         System.out.println("\n");
         op.printArray(fourthArray);
         System.out.println("Second smallest number " + fourthArray[1]);
-
     }
 
 }
