@@ -41,5 +41,21 @@ public class AppMain {
         vetDr.setVetSpecialization("Medical Veterinary Sciences");
         System.out.println("The vet's name is " + vetDr.getVetName());
         System.out.println("The vet's specialization is " + vetDr.getVetSpecialization());
+        Fox foxie = new Fox();
+        foxie.setDogColor("Gray");
+        foxie.setDogName("Foxie");
+        Cat catto = new Cat();
+        catto.setAge(5);
+        catto.setDogName("Pissu");
+        System.out.println("The cat's name is " + catto.getDogName() + ".");
+        System.out.println("The fox's color is " + foxie.getDogColor() + ".");
+        catFood cattoFood = new catFood();
+        cattoFood.setFoodName("Wiskas");
+        System.out.println("The name of the cat food is "+ cattoFood.getFoodName() + ".");
+        DogFood doggoFood = new DogFood();
+        doggoFood.setFoodQuantity(45);
+        System.out.println("The dog food quantity is " + doggoFood.getFoodQuantity() + " kg.");
+
+
     }
 }
