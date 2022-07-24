@@ -3,6 +3,7 @@ import java.util.List;
 
 public class LogicalOperations {
 
+
     public int getGreaterNumber(int first, int second) {
         if (first < second) {
             return second;
@@ -439,14 +440,20 @@ public class LogicalOperations {
         for (int i = 0; i < myList.size(); i++)
             System.out.println("Index "+i+" has value: "+ myList.get(i));
     }
-        public int getTheBiggestValueFromList(List<Integer> myList){
-         int maxValue = 0;
-         for (Integer integer : myList) {
-            if (integer > maxValue)
-                maxValue = integer;
+        public int getTheBiggestValueFromList(List<Integer> myList) {
+            int maxValue = 0;
+            for (Integer integer : myList) {
+                if (integer > maxValue)
+                    maxValue = integer;
+            }
+            return maxValue;
         }
-        return maxValue;
+    public void wait(int x) throws InterruptedException {
+        System.out.println("Start");
+        Thread.sleep(x);
+        System.out.println("Finish");
     }
+
 }
 
 
