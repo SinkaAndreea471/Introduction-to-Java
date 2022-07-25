@@ -1,8 +1,11 @@
-package AnimalRescue;
+package AnimalRescue.Animals.Cats;
 
-public class Fox extends Animal{
+import AnimalRescue.Animals.Animal;
+
+public class Persian extends Cat {
     @Override
     public void feeding() {
+        System.out.println("Eats Whiskas only");
 
     }
 
@@ -13,7 +16,7 @@ public class Fox extends Animal{
 
     @Override
     public void speaks() {
-
+        System.out.println("Mau!!");
     }
 
     @Override

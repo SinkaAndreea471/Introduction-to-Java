@@ -1,6 +1,8 @@
-package AnimalRescue;
+package AnimalRescue.Animals.Dogs;
 
-public class Cat extends Animal {
+import AnimalRescue.Animals.Animal;
+
+public class Dog extends Animal {
     @Override
     public void feeding() {
 

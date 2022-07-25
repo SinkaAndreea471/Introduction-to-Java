@@ -1,8 +1,15 @@
 package AnimalRescue;
 
+import AnimalRescue.Animals.Cats.BritishShorthair;
+import AnimalRescue.Animals.Cats.Persian;
+import AnimalRescue.Animals.Dogs.Boxer;
+import AnimalRescue.Animals.Fox;
+import AnimalRescue.Animals.Dogs.Poodle;
+import AnimalRescue.Animals.Dogs.Labradoodle;
+
 public class AppMain {
     public static void main(String[] args) {
-        Doggo dog = new Doggo();
+        Poodle dog = new Poodle();
         dog.setDogName("Dante");
         dog.setDogBreed("Labrador retriever");
         dog.setHappyLevel(8);
@@ -44,10 +51,10 @@ public class AppMain {
         Fox foxie = new Fox();
         foxie.setDogColor("Gray");
         foxie.setDogName("Foxie");
-        Cat catto = new Cat();
-        catto.setAge(5);
-        catto.setDogName("Pissu");
-        System.out.println("The cat's name is " + catto.getDogName() + ".");
+        BritishShorthair britShort = new BritishShorthair();
+        britShort.setAge(5);
+        britShort.setDogName("Pissu");
+        System.out.println("The cat's name is " + britShort.getDogName() + ".");
         System.out.println("The fox's color is " + foxie.getDogColor() + ".");
         catFood cattoFood = new catFood();
         cattoFood.setFoodName("Wiskas");
@@ -58,6 +65,21 @@ public class AppMain {
         HumanDoctor humanDoc = new HumanDoctor();
         humanDoc.setVetName("Dr. Albert Schweinstein");
         System.out.println("The human doc's name is " + humanDoc.getVetName() + ".");
+        britShort.feeding();
+        dog.feeding();
+        Labradoodle labrador = new Labradoodle();
+        labrador.speaks();
+        labrador.feeding();
+        Boxer boxie = new Boxer();
+        boxie.feeding();
+        britShort.speaks();
+        britShort.setAge(5);
+        System.out.println("The british shorthaired cat's age is  " + britShort.getAge());
+        Persian persi = new Persian();
+        persi.speaks();
+        persi.feeding();
+
+
 
 
     }

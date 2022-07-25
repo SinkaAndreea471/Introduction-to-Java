@@ -1,8 +1,8 @@
-package AnimalRescue;
+package AnimalRescue.Animals;
 
-public class Doggo {
-     private int age;
-     private String dogName;
+public abstract class Animal {
+    private int age;
+    private String dogName;
     private String dogBreed;
     private String dogColor;
     private double dogWeight;
@@ -14,20 +14,13 @@ public class Doggo {
     private String favouriteActivity;
 
 
-    public void feeding() {
-        System.out.println("eats dog food");
-    }
+    public abstract void feeding();
 
-    public void sleeps() {
-        System.out.println("dog snores while sleeping");
-    }
+    public abstract void sleeps();
 
-    public void speaks() {
-        System.out.println("Bork bork!!");
-    }
-    public void plays (){
-        System.out.println("Playing fetch!");
-    }
+    public abstract void speaks();
+
+    public abstract void plays ();
 
     public int getAge() {
         return age;
